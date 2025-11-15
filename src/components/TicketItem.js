@@ -23,9 +23,9 @@ export default function TicketItem({ ticket, dispatch }) {
 
       <button
         className="button"
-        onClick={() => {
-          /*Edit Ticket*/
-        }}
+        onClick={() =>
+          dispatch({ type: "SET_EDITIING_TICKET", payload: ticket })
+        }
       >
         Edit
       </button>
